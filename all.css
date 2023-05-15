@@ -4,7 +4,7 @@
 
 
 :root{
-    --darkgray: #282828;
+    --darkgray: #3D3D3D;
     --middlegray: #C5C7CD;
     --lightgray: #DCDDDD;
     --darkblue: #158B8E;
@@ -31,8 +31,8 @@ html{
     padding: 60px;
 } */
 
-/* nav */
-.nav{
+/* header */
+.header{
     position: fixed;
     z-index: 1000;
     width: 100%;
@@ -41,54 +41,59 @@ html{
     justify-content: space-between;
     align-items: center;
     padding:20px 20px;
+    box-shadow: var(--box-shadow);
 }
 
-.nav .logo{
+.header .logo{
     color: var(--darkgray);
     font-weight: 900;
     font-size: 30px;
 }
 
-.nav .logo:hover{
+.header .logo:hover{
     color:var(--lightblue);
     transform: scale(1.05);
     cursor: pointer;
 }
 
-.nav .navbar a{
+.header .navbar a{
     color: var(--darkgray);
     margin: 10px 50px;
     font-weight: 700;
     font-size: 18px;
 }
 
-.nav .navbar a:hover,
-.nav .navbar .active{
+.header .navbar a:hover,
+.header .navbar .active{
     border-bottom: var(--darkgray) solid 1px;
     letter-spacing: 2px;
     cursor: pointer;
 }
 
-.nav .icon a,
-.nav .icon i{
+/* .header .icon{
+    margin-right: 30px;
+} */
+
+.header .icon a,
+.header .icon i{
     color: var(--darkgray);
     margin: 10px 10px;
     font-size: 30px;
 }
 
-.nav .icon a:hover,
-.nav .icon i:hover{
+.header .icon a:hover,
+.header .icon i:hover{
     color: var(--lightblue);
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.nav .icon #menu-bars{
+.header .icon #menu-bars{
     display: none;
 }
 
-/* header */
-#header{
+/* home */
+#home{
     position: relative;
     width: 100%;
     height: 1080px;
@@ -97,50 +102,50 @@ html{
     background-size: cover;
 }
 
-#header .name{
+#home .name{
     position: absolute;
     top: 300px;
     right: 150px;
     color: white;
 }
 
-#header .name h5{
+#home .name h5{
     font-size: 25px;
 }
 
-#header .name h3{
+#home .name h3{
     font-size: 73px;
 }
 
-#header .name p{
+#home .name p{
     font-size: 13px;
     letter-spacing: 13px;
     border-bottom: white solid 1px;
 }
 
-#header .name h4{
+#home .name h4{
     font-size: 26px;
     margin-top: 13px;
 }
 
-#header .intro{
+#home .intro{
     position: absolute;
     top: 300px;
     left: 100px;
     width: 500px
 }
 
-#header .intro h6{
+#home .intro h6{
     color: var(--middleblue);
     font-size: 26px;
 }
 
-#header .intro h3{
+#home .intro h3{
     color: var(--lightblue);
     font-size: 52px;
 }
 
-#header .intro p{
+#home .intro p{
     color: white;
     font-size: 16px;
     line-height: 26px;
@@ -148,14 +153,14 @@ html{
     margin-bottom: 26px;
 }
 
-#header .intro a{
+#home .intro a{
     width: fit-content;
     color: var(--lightblue);
     font-size: 20px;
     border-bottom: var(--lightblue) solid 1px;
 }
 
-#header .intro a:hover{
+#home .intro a:hover{
     letter-spacing: 2px;
 }
 
@@ -187,20 +192,160 @@ html{
 #works .label{
     position: relative;
     top: -450px;
-    margin: 100px 0 0 0;
+    margin: 100px 10px 0 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
-#works img{
+#works .label .content{
     width: 10%;
-    margin: 0 1%
+    margin: 0 1%;
+    position: relative;
+    /* text-align: center; */
+    cursor: pointer;
 }
 
-#works .label .Website:hover{
-    cursor: pointer;
-    content: url(image/website0-.svg);
-    width: 30%;
-    z-index: 10;
+#works .label .content img{
+    width: 100%;
 }
+
+#works .label .content h4{
+    color: white;
+    font-weight: 600;
+    font-size: 26px;
+    position: relative;
+    text-align: start;
+    top:-10%;
+    left: 5%;
+}
+#works .label .CIS h4,
+#works .label .Fanclub h4{
+    top:-15%;
+}
+
+#works .label .content h5{
+    color: white;
+    opacity: 0.6;
+    font-weight: 600;
+    font-size: 35px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    bottom: 23%;
+    left: 0;
+}
+#works .label .CIS h5,
+#works .label .Fanclub h5{
+    font-size: 28px;
+    bottom: 28%;
+}
+
+#works .label .content ul{
+    position: absolute;
+    top: 30%;
+    list-style: none;
+    text-align: start;
+}
+
+#works .label .content ul li{
+    font-size: 85%;
+    width: 170px;
+    color:var(--lightblue);
+    border: var(--middleblue) solid 1px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#works .label:hover{
+    transform: scale(0.9);
+}
+
+/* #works .label .content:hover .label{
+    opacity: 0.7;
+} */
+
+#works .label .content:hover,
+#works .label .content.active{
+    transform: scale(1.1);
+} 
+
+#works .label .content ul li:hover,
+#works .label .content ul .active{
+    letter-spacing: 0.8px;
+    background-color: var(--lightblue);
+    color: white;
+    transform: scale(1.2);
+}
+
+#works .workpage {
+    /* width: 90%; */
+    position: relative;
+    top: -525px;
+    height: auto;
+    padding: 5%;
+    background-color: var(--darkgray);
+    text-align: center;
+    display: none;
+}
+
+#works .workpage[class*=active]{
+    display: block;
+}
+
+#works .workpage p{
+    /* width: 30%; */
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: white solid 1px;
+}
+
+#works .workpage img{
+    width:45%;
+}
+
+#works .workpage .horimg{
+    width:90%;
+}
+
+#works .workpage .swiper-button-next,
+#works .workpage .swiper-button-prev,
+#works .workpage .swiper-pagination{
+    color: white;
+}
+
+#works .workpage button{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: var(--darkgray);
+    border: var(--lightblue) solid 1px;
+    color: var(--lightblue);
+    padding: 10px;
+    margin: 0px 10px 30px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#works .workpage button:hover,
+#works .workpage button[class*=active]{
+    letter-spacing: 2px;
+    background-color: white;
+    color: var(--lightblue);
+    border: white solid 1px;
+    display: inline;
+}
+
+#works .workpage .workslide{
+    display: none;
+}
+#works .workpage .active{
+    display: flex;
+}
+
+
 
 
 /* about */

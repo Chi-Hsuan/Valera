@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valera</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -12,13 +14,14 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="all.css">
 </head>
+
 <body>
-    <!--Nav-->
-    <div class="nav">
+    <!--header-->
+    <div class="header">
         <a href="index.html" class="logo">Valera.F</a>
 
         <nav class="navbar">
-            <a class="active" href="# ">Home</a>
+            <a class="active" href="#home">Home</a>
             <a href="#works">Works</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
@@ -33,8 +36,8 @@
     </div>
 
 
-    <!--Header-->
-    <section id="header">
+    <!--Home-->
+    <section id="home">
         <div class="name">
             <h5>My name is Valera.</h5>
             <h3>范綺軒</h3>
@@ -57,78 +60,201 @@
     <section id="works">
         <h3>my Works</h3>
         <div class="bg"> </div>
+
         <div class="label">
-            <img src="image/website0.svg" class="Website" alt="Website Work">
-            <img src="image/Graphic Design0.svg" class="Graphic" alt="Graphic Design">
-            <img src="image/CIS0.svg" class="CIS" alt="CIS">
-            <img src="image/Package Design0.svg" class="Package" alt="Package Design">
-            <img src="image/Product Design0.svg" class="Product" alt="Product Design">
-            <img src="image/Illustrate0.svg" class="Illustrate" alt="Illustrate">
-            <img src="image/Photography0.svg" class="Photography" alt="Photography">
-            <img src="image/Fan Club 0.svg" class="Club" alt="Fan Club">    
+            <div class="website content active">
+                <img src="image/websitelb.png" class="Website" alt="Website Work">
+                <h5>網頁作品</h5>
+                <h4>Website works</h4>
+                <ul>
+                    <li class="active" target="frontend">Front-end engineering<br/><small>前端工程</small></li>
+                    <li target="uiux">UI/UX research<br/><small>UI/UX研究</small></li>
+                </ul>
+            </div>
+    
+            <div class="graphic content">
+                <img src="image/Graphic Designlb.png" class="Graphic" alt="Graphic Design">
+                <h5>平面設計</h5>
+                <h4>Graphic Design</h4>
+                <ul>
+                    <li>Layout Design<br/><small>排版設計</small></li>
+                    <li>Product photography<br/><small>產品攝影與商業行銷</small></li>
+                </ul>
+            </div>
+    
+            <div class="CIS content">
+                <img src="image/CISlb.png" class="CIS" alt="CIS">
+                <h5>企業視覺<br/>識別系統</h5>
+                <h4>Corporate Identity System</h4>
+                <ul>
+                    <li>CIS  <small>企業視覺識別系統</small></li>
+                </ul>
+            </div>
+    
+            <div class="Package content">
+                <img src="image/Package Designlb.png" class="Package" alt="Package Design">
+                <h5>包裝設計</h5>
+                <h4>Package Design</h4>
+                <ul>
+                    <li>Package Design  <small>包裝設計</small></li>
+                </ul>
+            </div>
+    
+            <div class="Product content">
+                <img src="image/Product Designlb.png" class="Product" alt="Product Design">
+                <h5>產品設計</h5>
+                <h4>Product Design</h4>
+                <ul>
+                    <li>Product Design  <small>產品設計</small></li>
+                </ul>
+            </div>
+    
+            <div class="Illustrate content">
+                <img src="image/Illustratelb.png" class="Illustrate" alt="Illustrate">
+                <h5>插畫</h5>
+                <h4>Illustrate</h4>
+                <ul>
+                    <li>Illustrate  <small>插畫</small></li>
+                    <li>sticker  <small>貼圖</small></li>
+                </ul>
+            </div>
+    
+            <div class="photography content">
+                <img src="image/Photographylb.png" class="Photography" alt="Photography">
+                <h5>攝影</h5>
+                <h4>Photography</h4>
+                <ul>
+                    <li>Photography  <small>攝影</small></li>
+                </ul>
+            </div>
+    
+            <div class="Fanclub content">
+                <img src="image/Fan Clublb.png" class="Club" alt="Fan Club">    
+                <h5>粉絲後援會<br/>應援策辦</h5>
+                <h4>Fan Club management</h4>
+                <ul>
+                    <li>video production  <small>影音製作</small></li>
+                    <li>Aid production  <small>應援物製作</small></li>
+                </ul>
+            </div>
+    
         </div>
+
+
+        <!--slide content-->
+        <div class="workpage active" id="frontend">
+            <P>Project 項目：</P>
+            <button class="active" id="woodinnwebbt" type="button" onclick="workslide(woodinnweb,woodinnwebbt)">Woods inn 民宿網頁</button>
+            <button id="liuhewebbt" type="button" onclick="workslide(liuheweb,liuhewebbt)">六合夜市網頁網頁</button>
+            <div class="swiper workslide frontendslide active" id="woodinnweb">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/1.website works-front-end-03.jpg" alt="">
+                        <img src="image/1.website works-front-end-04.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/1.website works-front-end-05.jpg" alt="">
+                        <img src="image/1.website works-front-end-06.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/1.website works-front-end-07.jpg" alt="">
+                        <img src="image/1.website works-front-end-08.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper workslide frontendslide" id="liuheweb">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/1.website works-front-end-09.jpg" alt="">
+                        <img src="image/1.website works-front-end-10.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/1.website works-front-end-11.jpg" alt="">
+                        <img src="image/1.website works-front-end-12.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/1.website works-front-end-13.jpg" alt="">
+                        <img src="image/1.website works-front-end-14.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="workpage" id="uiux">
+            <P>Project 項目：</P>
+            <button class="active" id="fooddelibt" type="button" onclick="workslide(fooddeli,fooddelibt)">食物外送系統優化</button>
+            <button id="familybt" type="button" onclick="workslide(family,familybt)">FamiStory - 台語語音應用(祖孫交流系統)</button>
+            <div class="swiper workslide uiuxslide active" id="fooddeli">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/2.website works-UIUXresearch-01.jpg" alt="">
+                        <img src="image/2.website works-UIUXresearch-02.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img class="horimg" src="image/2.website works-UIUXresearch-03.jpg" alt="">                          
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/2.website works-UIUXresearch-04.jpg" alt="">   
+                    </div>
+                    <div class="p4 swiper-slide">
+                        <img class="horimg" src="image/2.website works-UIUXresearch-05.jpg" alt="">                          
+                    </div>
+                    <div class="p5 swiper-slide">
+                        <img class="horimg" src="image/2.website works-UIUXresearch-06.jpg" alt="">                          
+                    </div>
+                    <div class="p6 swiper-slide">
+                        <img class="horimg" src="image/2.website works-UIUXresearch-07.jpg" alt="">                          
+                    </div>
+                    <div class="p7 swiper-slide">
+                        <img class="horimg" src="image/2.website works-UIUXresearch-08.jpg" alt="">                          
+                    </div>
+                    <div class="p8 swiper-slide">
+                        <img class="horimg" src="image/2.website works-UIUXresearch-09.jpg" alt="">                          
+                    </div>
+                    <div class="p9 swiper-slide">
+                        <img src="image/2.website works-UIUXresearch-10.jpg" alt="">  
+                    </div> 
+                    <div class="p10 swiper-slide">
+                        <img src="image/2.website works-UIUXresearch-11.jpg" alt="">
+                        <img src="image/2.website works-UIUXresearch-12.jpg" alt="">    
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper workslide uiuxslide" id="family">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/1.website works-front-end-09.jpg" alt="">
+                        <img src="image/1.website works-front-end-10.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/1.website works-front-end-11.jpg" alt="">
+                        <img src="image/1.website works-front-end-12.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/1.website works-front-end-13.jpg" alt="">
+                        <img src="image/1.website works-front-end-14.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
         
-        <!-- <div class="website">
-            <img src="">
-            <h5>網頁作品</h5>
-            <h4>Website works</h4>
-            <ul>
-                <li>Front-end engineering<small>前端工程</small></li>
-                <li>UI/UX research<small>UI/UX研究</small></li>
-            </ul>
-        </div>
-
-        <div class="graphic">
-            <img src="">
-            <h5>平面設計</h5>
-            <h4>Graphic Design</h4>
-            <ul>
-                <li>Layout Design<small>排版設計</small></li>
-                <li>Product photography<small>產品攝影與商業行銷</small></li>
-            </ul>
-        </div>
-
-        <div class="CIS">
-            <img src="">
-            <h5>企業視覺識別系統CIS</h5>
-            <h4>Corporate Identity System</h4>
-            <ul>
-                <li>CIS<small>企業視覺識別系統</small></li>
-            </ul>
-        </div>
-
-        <div class="Package">
-            <img src="">
-            <h5>包裝設計</h5>
-            <h4>Package Design</h4>
-            <ul>
-                <li>Package Design<small>包裝設計</small></li>
-            </ul>
-        </div>
-
-        <div class="Product">
-            <img src="">
-            <h5>產品設計</h5>
-            <h4>Product Design</h4>
-        </div>
-
-        <div class="Illustrate">
-            <img src="">
-            <h5>插畫</h5>
-            <h4>Illustrate</h4>
-        </div>
-
-        <div class="photography">
-            <img src="">
-            <h5>攝影</h5>
-            <h4>Photography</h4>
-        </div>
-
-        <div class="Fanclub">
-            <img src="">
-            <h5>粉絲後援會經營及相關應援策辦</h5>
-            <h4>Fan Club management</h4>
-        </div> -->
     </section>
 
 
@@ -268,6 +394,11 @@
     <section id="footer">
         <div class="credit">copyright @ 2023 <span>Valera</span></div>
     </section>
+
+
+
+
+    <script src="Valera.js"></script>
     
 </body>
 </html>
