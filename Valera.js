@@ -1,3 +1,10 @@
+// window.onload=()=>{
+//     var intro=document.querySelector('#home .intro');
+//     var name=document.querySelector('#home .name');
+
+    
+// }
+
 //nav burgur menu start//
 var menubar = document.querySelector('.header .icon #menu-bars');
 var navbar = document.querySelector('.header .navbar');

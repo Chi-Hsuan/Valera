@@ -316,6 +316,23 @@ html{
     width:90%;
 }
 
+#works #frontend a{
+    position: relative;
+    margin: 5px;
+    width: 4%;
+    height: fit-content;
+    color: white;
+    font-size: 12px;
+    border: white solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#works #frontend a img{
+    margin: 5px;
+}
+
+
 
 #works .workpage .swiper-button-next,
 #works .workpage .swiper-button-prev,
