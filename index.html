@@ -77,8 +77,8 @@
                 <h5>平面設計</h5>
                 <h4>Graphic Design</h4>
                 <ul>
-                    <li>Layout Design<br/><small>排版設計</small></li>
-                    <li>Product photography<br/><small>產品攝影與商業行銷</small></li>
+                    <li target="layout-design">Layout Design<br/><small>排版設計</small></li>
+                    <li target="product-photography">Product photography<br/><small>產品攝影與商業行銷</small></li>
                 </ul>
             </div>
     
@@ -87,7 +87,7 @@
                 <h5>企業視覺<br/>識別系統</h5>
                 <h4>Corporate Identity System</h4>
                 <ul>
-                    <li>CIS  <small>企業視覺識別系統</small></li>
+                    <li target="cis">CIS  <small>企業視覺識別系統</small></li>
                 </ul>
             </div>
     
@@ -96,7 +96,7 @@
                 <h5>包裝設計</h5>
                 <h4>Package Design</h4>
                 <ul>
-                    <li>Package Design  <small>包裝設計</small></li>
+                    <li target="package-design">Package Design  <small>包裝設計</small></li>
                 </ul>
             </div>
     
@@ -105,7 +105,7 @@
                 <h5>產品設計</h5>
                 <h4>Product Design</h4>
                 <ul>
-                    <li>Product Design  <small>產品設計</small></li>
+                    <li target="product-design">Product Design  <small>產品設計</small></li>
                 </ul>
             </div>
     
@@ -114,8 +114,8 @@
                 <h5>插畫</h5>
                 <h4>Illustrate</h4>
                 <ul>
-                    <li>Illustrate  <small>插畫</small></li>
-                    <li>sticker  <small>貼圖</small></li>
+                    <li target="illustrate">Illustrate  <small>插畫</small></li>
+                    <li target="sticker">sticker  <small>貼圖</small></li>
                 </ul>
             </div>
     
@@ -124,7 +124,7 @@
                 <h5>攝影</h5>
                 <h4>Photography</h4>
                 <ul>
-                    <li>Photography  <small>攝影</small></li>
+                    <li target="photography">Photography  <small>攝影</small></li>
                 </ul>
             </div>
     
@@ -133,8 +133,8 @@
                 <h5>粉絲後援會<br/>應援策辦</h5>
                 <h4>Fan Club management</h4>
                 <ul>
-                    <li>video production  <small>影音製作</small></li>
-                    <li>Aid production  <small>應援物製作</small></li>
+                    <li target="video-productioin">video production  <small>影音製作</small></li>
+                    <li target="aid-production">Aid production  <small>應援物製作</small></li>
                 </ul>
             </div>
     
@@ -142,11 +142,13 @@
 
 
         <!--slide content-->
+
+        <!--frontend-->
         <div class="workpage active" id="frontend">
             <P>Project 項目：</P>
             <button class="active" id="woodinnwebbt" type="button" onclick="workslide(woodinnweb,woodinnwebbt)">Woods inn 民宿網頁</button>
             <button id="liuhewebbt" type="button" onclick="workslide(liuheweb,liuhewebbt)">六合夜市網頁網頁</button>
-            <div class="swiper workslide frontendslide active" id="woodinnweb">
+            <div class="swiper workslide active" id="woodinnweb">
                 <div class="swiper-wrapper">
                     <div class="p1 swiper-slide">
                         <img src="image/1.website works-front-end-03.jpg" alt="">
@@ -187,11 +189,12 @@
             </div>
         </div>
 
+        <!--uiux-->
         <div class="workpage" id="uiux">
             <P>Project 項目：</P>
             <button class="active" id="fooddelibt" type="button" onclick="workslide(fooddeli,fooddelibt)">食物外送系統優化</button>
             <button id="familybt" type="button" onclick="workslide(family,familybt)">FamiStory - 台語語音應用(祖孫交流系統)</button>
-            <div class="swiper workslide uiuxslide active" id="fooddeli">
+            <div class="swiper workslide active" id="fooddeli">
                 <div class="swiper-wrapper">
                     <div class="p1 swiper-slide">
                         <img src="image/2.website works-UIUXresearch-01.jpg" alt="">
@@ -201,7 +204,7 @@
                         <img class="horimg" src="image/2.website works-UIUXresearch-03.jpg" alt="">                          
                     </div>
                     <div class="p3 swiper-slide">
-                        <img src="image/2.website works-UIUXresearch-04.jpg" alt="">   
+                        <img class="horimg" src="image/2.website works-UIUXresearch-04.jpg" alt="">                          
                     </div>
                     <div class="p4 swiper-slide">
                         <img class="horimg" src="image/2.website works-UIUXresearch-05.jpg" alt="">                          
@@ -218,14 +221,6 @@
                     <div class="p8 swiper-slide">
                         <img class="horimg" src="image/2.website works-UIUXresearch-09.jpg" alt="">                          
                     </div>
-                    <div class="p9 swiper-slide">
-                        <img src="image/2.website works-UIUXresearch-10.jpg" alt="">  
-                    </div> 
-                    <div class="p10 swiper-slide">
-                        <img src="image/2.website works-UIUXresearch-11.jpg" alt="">
-                        <img src="image/2.website works-UIUXresearch-12.jpg" alt="">    
-                    </div>
-                    
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -235,16 +230,322 @@
             <div class="swiper workslide uiuxslide" id="family">
                 <div class="swiper-wrapper">
                     <div class="p1 swiper-slide">
-                        <img src="image/1.website works-front-end-09.jpg" alt="">
-                        <img src="image/1.website works-front-end-10.jpg" alt="">    
+                        <img src="image/2.website works-UIUXresearch-13.jpg" alt="">
+                        <img src="image/2.website works-UIUXresearch-14.jpg" alt="">    
                     </div>
                     <div class="p2 swiper-slide">
-                        <img src="image/1.website works-front-end-11.jpg" alt="">
-                        <img src="image/1.website works-front-end-12.jpg" alt="">    
+                        <img src="image/2.website works-UIUXresearch-15.jpg" alt="">
+                        <img src="image/2.website works-UIUXresearch-16.jpg" alt="">    
                     </div>
                     <div class="p3 swiper-slide">
-                        <img src="image/1.website works-front-end-13.jpg" alt="">
-                        <img src="image/1.website works-front-end-14.jpg" alt="">    
+                        <img src="image/2.website works-UIUXresearch-17.jpg" alt="">
+                        <img src="image/2.website works-UIUXresearch-18.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--layout-design-->
+        <div class="workpage" id="layout-design">
+            <P>Project 項目：</P>
+            <button class="active" id="DMbt" type="button" onclick="workslide(DM,DMbt)">DM design</button>
+            <div class="swiper workslide active" id="DM">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/3.Graphic design-03.jpg" alt="">
+                        <img src="image/3.Graphic design-04.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--product-photography-->
+        <div class="workpage" id="product-photography">
+            <P>Project 項目：</P>
+            <button class="active" id="ProductPhotobt" type="button" onclick="workslide(ProductPhoto,ProductPhotobt)">Product Photography 產品攝影</button>
+            <div class="swiper workslide active" id="ProductPhoto">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/3.Graphic design-05.jpg" alt="">
+                        <img src="image/3.Graphic design-06.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--cis-->
+        <div class="workpage" id="cis">
+            <P>Project 項目：</P>
+            <button class="active" id="museumcisbt" type="button" onclick="workslide(museumcis,museumcisbt)">Detective Museum 偵探博物館</button>
+            <button id="GreenShepherdcisbt" type="button" onclick="workslide(GreenShepherdcis,GreenShepherdcisbt)">Green Shepherd 牧陽能控</button>
+            <button id="liuhecisbt" type="button" onclick="workslide(liuhecis,liuhecisbt)">Liuho Nightmarket 六合夜市</button>
+
+            <div class="swiper workslide active" id="museumcis">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/4.CIS-Museum-03.jpg" alt="">
+                        <img src="image/4.CIS-Museum-04.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/4.CIS-Museum-05.jpg" alt="">
+                        <img src="image/4.CIS-Museum-06.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/4.CIS-Museum-07.jpg" alt="">
+                        <img src="image/4.CIS-Museum-08.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper workslide" id="GreenShepherdcis">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/5.CIS-牧陽能控-01.jpg" alt="">
+                        <img src="image/5.CIS-牧陽能控-02.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/5.CIS-牧陽能控-03.jpg" alt="">
+                        <img src="image/5.CIS-牧陽能控-04.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper workslide" id="liuhecis">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/6.CIS-六合夜市-01.jpg" alt="">
+                        <img src="image/6.CIS-六合夜市-02.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/6.CIS-六合夜市-03.jpg" alt="">
+                        <img src="image/6.CIS-六合夜市-04.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/6.CIS-六合夜市-05.jpg" alt="">
+                        <img src="image/6.CIS-六合夜市-06.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+        <!--package-design-->
+        <div class="workpage" id="package-design">
+            <P>Project 項目：</P>
+            <button class="active" id="netcafebt" type="button" onclick="workslide(netcafe,netcafebt)">雀巢永續包裝設計產學案</button>
+            <div class="swiper workslide active" id="netcafe">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/7.package design-03.jpg" alt="">
+                        <img src="image/7.package design-04.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/7.package design-05.jpg" alt="">
+                        <img src="image/7.package design-06.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/7.package design-07.jpg" alt="">
+                        <img src="image/7.package design-08.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--product-design-->
+        <div class="workpage" id="product-design">
+            <P>Project 項目：</P>
+            <button class="active" id="jiahebt" type="button" onclick="workslide(jiahe,jiahebt)">呷賀 - 長者輔助型餐具</button>
+            <button id="Dropletbt" type="button" onclick="workslide(Droplet,Dropletbt)">Droplet - 家庭照護飲水機 </button>
+            <button id="ElectricExpressbt" type="button" onclick="workslide(ElectricExpress,ElectricExpressbt)">Electric Express 智能電動推車</button>
+
+            <div class="swiper workslide active" id="jiahe">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/8.product design-03.jpg" alt="">
+                        <img src="image/8.product design-04.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper workslide" id="Droplet">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/8.product design-05.jpg" alt="">
+                        <img src="image/8.product design-06.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper workslide" id="ElectricExpress">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/8.product design-07.jpg" alt="">
+                        <img src="image/8.product design-08.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/8.product design-09.jpg" alt="">
+                        <img src="image/8.product design-10.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+        <!--illustrate-->
+        <div class="workpage" id="illustrate">
+            <P>Project 項目：</P>
+            <button class="active" id="illubt" type="button" onclick="workslide(illu,illubt)">Illustrate 插畫</button>
+            <div class="swiper workslide active" id="illu">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/8.illustrate-11.jpg" alt="">
+                        <img src="image/8.illustrate-12.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/8.illustrate-13.jpg" alt="">
+                        <img src="image/8.illustrate-14.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/8.illustrate-15.jpg" alt="">
+                        <img src="image/8.illustrate-16.jpg" alt="">    
+                    </div>
+                    <div class="p4 swiper-slide">
+                        <img src="image/8.illustrate-17.jpg" alt="">
+                        <img src="image/8.illustrate-18.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--sticker-->
+        <div class="workpage" id="sticker">
+            <P>Project 項目：</P>
+            <button class="active" id="stickersbt" type="button" onclick="workslide(stickers,stickersbt)">sticker 貼圖</button>
+            <div class="swiper workslide active" id="stickers">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/8.sticker-19.jpg" alt="">
+                        <img src="image/8.sticker-20.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--photography-->
+        <div class="workpage" id="photography">
+            <P>Project 項目：</P>
+            <button class="active" id="PortraitPhotographybt" type="button" onclick="workslide(PortraitPhotography,PortraitPhotographybt)">Portrait photography 人像攝影</button>
+            <div class="swiper workslide frontendslide active" id="PortraitPhotography">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/8.photography-21.jpg" alt="">
+                        <img src="image/8.photography-22.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/8.photography-23.jpg" alt="">
+                        <img src="image/8.photography-24.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/8.photography-25.jpg" alt="">
+                        <img src="image/8.photography-26.jpg" alt="">    
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--video-productioin-->
+        <div class="workpage" id="video-productioin">
+            <P>Project 項目：</P>
+            <button class="active" id="fanvideobt" type="button" onclick="workslide(fanvideo,fanvideobt)">Video Production 應援影片製作</button>
+            <div class="swiper workslide frontendslide active" id="fanvideo">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <video src="video/Final-V.mp4" width="1080px" controls="true"> 
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <video src="video/雙人全屏.mp4" width="1080px" controls="true"> 
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <video src="video/雙人單屏2.mp4" width="1080px" controls="true"> 
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <video src="video/雙人(含音軌_20s版).mp4" width="1080px" controls="true"> 
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <video src="video/Heejae1.mp4" width="1080px" controls="true"> 
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <video src="video/IREAH影片1.mp4" width="1080px" controls="true"> 
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <video src="video/heejae2.mp4" width="1080px" controls="true"> 
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <video src="video/IREAH2.mp4" width="1080px" controls="true"> 
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!--aid-production-->
+        <div class="workpage" id="aid-production">
+            <P>Project 項目：</P>
+            <button class="active" id="aidbt" type="button" onclick="workslide(aid,aidbt)">Aid Production 應援物製作</button>
+            <div class="swiper workslide frontendslide active" id="aid">
+                <div class="swiper-wrapper">
+                    <div class="p1 swiper-slide">
+                        <img src="image/8.fan clubjpg-27.jpg" alt="">
+                        <img src="image/8.fan clubjpg-28.jpg" alt="">    
+                    </div>
+                    <div class="p2 swiper-slide">
+                        <img src="image/8.fan clubjpg-29.jpg" alt="">
+                        <img src="image/8.fan clubjpg-30.jpg" alt="">    
+                    </div>
+                    <div class="p3 swiper-slide">
+                        <img src="image/8.fan clubjpg-31.jpg" alt="">
+                        <img src="image/8.fan clubjpg-32.jpg" alt="">    
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
