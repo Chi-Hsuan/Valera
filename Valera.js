@@ -1,6 +1,12 @@
 //nav burgur menu start//
-var menu = document.querySelector('#menu-bars');
-var nav = document.querySelector('.navbar');
+var menubar = document.querySelector('.header .icon #menu-bars');
+var navbar = document.querySelector('.header .navbar');
+
+menubar.onclick=()=>{
+    menubar.classList.toggle('fa-xmark');
+    navbar.classList.toggle('active');
+}
+
 //nav burgur menu end//
 
 
@@ -11,14 +17,14 @@ var section=document.querySelectorAll("section");
 var navlinks=document.querySelectorAll(".header .navbar a");
 
 window.onscroll = () => {
-    // menu.classList.remove('fa-xmark');
-    // navbar.classList.remove('active');
+    menubar.classList.remove('fa-xmark');
+    navbar.classList.remove('active');
 
     section.forEach(sec=>{
 
         var top = window.scrollY;
         var height = sec.offsetHeight;
-        var offset = sec.offsetTop - 350;
+        var offset = sec.offsetTop - 550;
         var id = sec.getAttribute('id');
 
         if(top >= offset && top < height+offset){
@@ -67,6 +73,8 @@ labelitem.forEach(lbitem=>{
 labelitemli.forEach(lbli=>{
     var id=lbli.getAttribute('target');
 
+
+
     lbli.onclick=()=>{
 
         labelitemli.forEach(lbliclose=> {
@@ -84,9 +92,23 @@ labelitemli.forEach(lbli=>{
         lbli.classList.add('active');
 
 
+        var workslidepage = document.querySelector('#'+id+'');
+        var workslideloca = document.querySelector('#works .label').offsetTop + document.querySelector('#works .label').offsetHeight + window.outerHeight-200;
 
-        console.log(id);
-        document.querySelector('#'+id+'').classList.add('active');
+        console.log(workslideloca);
+
+        workslidepage.classList.add('active');
+        document.documentElement.scrollTop = workslideloca;
+
+
+
+        // workpages.forEach(sliconloca=>{
+        //     var scloca = sliconloca.offsetTop + sliconloca.offsetHeight;
+
+        //     document.documentElement.scrollTop = scloca;
+        // })
+
+
     };
 });
 
@@ -108,10 +130,10 @@ var swiper = new Swiper(".workslide ", {
 //
 
 
-function workslide(id,bt){
+function workslide(id,bt,lb1,lb2,lb3){
     var workslidebt = document.querySelectorAll('#works .workpage button');
     var worksslideall = document.querySelectorAll('.swiper');
-
+    var breadcrumbs = document.querySelectorAll('#works .workpage .breadcrumbs');
 
     workslidebt.forEach(wsbt=>{
         wsbt.classList.remove('active');
@@ -123,6 +145,13 @@ function workslide(id,bt){
 
     bt.classList.add('active');
     id.classList.add('active');
+
+    // breadcrumbs.forEach(bc=>{
+    //     bc.innerHTML= lb1 + '  > ' + lb2 + '  >  ' + lb3;
+
+    // })
+
+
 }; 
 
 

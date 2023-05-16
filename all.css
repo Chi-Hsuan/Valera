@@ -70,10 +70,6 @@ html{
     cursor: pointer;
 }
 
-/* .header .icon{
-    margin-right: 30px;
-} */
-
 .header .icon a,
 .header .icon i{
     color: var(--darkgray);
@@ -91,6 +87,7 @@ html{
 .header .icon #menu-bars{
     display: none;
 }
+
 
 /* home */
 #home{
@@ -195,6 +192,7 @@ html{
     margin: 100px 10px 0 10px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #works .label .content{
@@ -248,7 +246,7 @@ html{
 
 #works .label .content ul li{
     font-size: 85%;
-    width: 170px;
+    width: auto;
     color:var(--lightblue);
     border: var(--middleblue) solid 1px;
     padding: 5px;
@@ -274,6 +272,7 @@ html{
     background-color: var(--lightblue);
     color: white;
     transform: scale(1.2);
+    margin: auto;
 }
 
 #works .workpage {
@@ -301,6 +300,14 @@ html{
     border-bottom: white solid 1px;
 }
 
+#works .workpage .breadcrumbs{
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 #works .workpage img{
     width:45%;
 }
@@ -324,7 +331,7 @@ html{
     border: var(--lightblue) solid 1px;
     color: var(--lightblue);
     padding: 10px;
-    margin: 0px 10px 30px 10px;
+    margin: 0px 10px 10px 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -345,8 +352,6 @@ html{
 #works .workpage .active{
     display: flex;
 }
-
-
 
 
 /* about */
@@ -380,6 +385,7 @@ html{
 #about p{
     color: black;
     font-size: 14px;
+    line-height: 20px;
 }
 
 #about .edu{
@@ -426,7 +432,7 @@ html{
 #contact{
     background-color: var(--lightgray);
     text-align: center;
-    padding: 60px;
+    padding: 30px;
 }
 
 #contact h6{
@@ -445,12 +451,12 @@ html{
 
 #contact .SNS a{
     display: inline-block;
-    width: 300px;
+    width: 25%;
     padding: 10px;
     border: var(--middleblue) solid 1px;
     color: var(--lightblue);
     font-size: 15px;
-    margin: 50px 50px 0 50px;
+    margin: 50px 30px 0 30px;
     line-height: 15px;
 }
 
@@ -487,4 +493,419 @@ html{
 #footer .credit span{
     color: var(--middleblue);
     font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RWD*/
+
+/* 1700px */
+@media (max-width:1700px){
+    /*home*/
+    #home .name{
+        top: 75px;
+        left: 75px;
+    }
+    
+    #home .intro{
+        padding: 10px;
+        background-color: #3d3d3d71;
+        top: 750px;
+        left: 0;
+        margin: 0 75px;
+        width: auto;
+    }
+    
+    /*works*/
+    #works .label{
+        top: -500px;
+    }
+    
+    #works .label .content{
+        width: 10%;
+        margin: 0 1%;
+    }
+
+    #works .label .content h4{
+        font-size: 15px;
+        top:-10%;
+        left: 5%;
+    }
+    #works .label .CIS h4,
+    #works .label .Fanclub h4{
+        top:-15%;
+    }
+    
+    #works .label .content h5{
+        font-size: 20px;
+        bottom: 23%;
+        left: 0;
+    }
+    #works .label .CIS h5,
+    #works .label .Fanclub h5{
+        font-size: 23px;
+        bottom: 28%;
+    }
+    
+    #works .label .content ul{
+        top: 30%;
+    }
+    
+    #works .label .content ul li{
+        background-color: #3D3D3D95;
+        font-size: 65%;
+        width:auto;
+        padding: 5px;
+        margin: 5px;
+    }
+
+        
+    #works .label:hover{
+        transform: scale(0.95);
+    }
+    
+    #works .label .content:hover,
+    #works .label .content.active{
+        transform: scale(1.1);
+    } 
+    
+    #works .label .content ul li:hover,
+    #works .label .content ul .active{
+        letter-spacing: 0.8px;
+        background-color: var(--lightblue);
+        color: white;
+        transform: scale(1.2);
+    }
+    /*about*/
+    #about p{
+        color: black;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    #about .sec .exp{
+        margin-right: 20px;
+    }
+    #about .sec .comp{
+        margin-left: 15px;
+    }
+    /*contact*/
+    #contact .SNS .row1{
+        margin: 15px 15px 0 15px;
+    }
+    
+    #contact .SNS a{
+        display: inline-block;
+        width: 230px;
+        margin: 50px 5px 0 5px;
+    }
+}
+
+
+/* 920px */
+@media (max-width:920px){
+    /*header*/
+    .header .icon #menu-bars{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: var(--darkgray) solid 1px;
+        clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header  .active{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a{
+        display: block;
+        background-color: white;
+        margin: 0px;
+        padding: 10px 10px;
+        font-weight: 700;
+        font-size: 18px; 
+        border-bottom: var(--darkgray) solid 1px;
+    }
+    .header .navbar a:hover{
+        background-color: var(--darkgray);
+        color: white;
+    }
+
+    /*home*/
+    #home .name{
+        top: 75px;
+        left: 75px;
+    }
+    
+    #home .name h5{
+        font-size: 25px;
+    }
+    
+    #home .name h3{
+        font-size: 73px;
+    }
+    
+    #home .name p{
+        width: fit-content;
+        font-size: 13px;
+        letter-spacing: 13px;
+    }
+    
+    #home .name h4{
+        font-size: 26px;
+        margin-top: 13px;
+    }
+    
+    #home .intro{
+        padding: 10px;
+        background-color: #3d3d3d71;
+        top: 700px;
+        left: 0;
+        margin: 0 75px;
+        width: auto;
+    }
+    
+    #home .intro h6{
+        color: var(--middleblue);
+        font-size: 26px;
+    }
+    
+    #home .intro h3{
+        font-size: 52px;
+    }
+    
+    #home .intro p{
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 13px;
+        margin-bottom: 26px;
+    }
+    
+    #home .intro a{
+        font-size: 20px;
+    }
+    /*works*/
+    #works .label{
+        top: -500px;
+    }
+    
+    #works .label .content{
+        width: 25%;
+        margin: 0 1%;
+    }
+        
+    #works .label:hover{
+        transform: scale(0.95);
+    }
+    
+    #works .label .content:hover,
+    #works .label .content.active{
+        transform: scale(1.1);
+    } 
+    
+    #works .label .content ul li:hover,
+    #works .label .content ul .active{
+        letter-spacing: 0.8px;
+        background-color: var(--lightblue);
+        color: white;
+        transform: scale(1.4);
+    }
+    /*about*/
+    #about p{
+        color: black;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    #about .sec .exp{
+        margin-right: 20px;
+    }
+    #about .sec .comp{
+        margin-left: 15px;
+    }
+    /*contact*/
+    #contact .SNS .row1{
+        margin: 15px 15px 0 15px;
+    }
+    
+    #contact .SNS a{
+        display: inline-block;
+        width: 230px;
+        margin: 50px 5px 0 5px;
+    }
+}
+
+/* 450px */
+@media (max-width:450px){
+    /*header*/
+    .header{
+        padding:10px;
+    }
+    
+    .header .logo{
+        font-size: 25px;
+    }
+    .header .icon a,
+    .header .icon i{
+        margin: 5px 5px;
+        font-size: 30px;
+    }
+    
+    /*home*/
+    #home .name{
+        top: 75px;
+        left: 20px;
+    }
+    
+    #home .name h5{
+        font-size: 20px;
+    }
+    
+    #home .name h3{
+        font-size: 68px;
+    }
+    
+    #home .name p{
+        width: fit-content;
+        font-size: 10px;
+        letter-spacing: 10px;
+    }
+    
+    #home .name h4{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    
+    #home .intro{
+        padding: 10px;
+        background-color: #3d3d3d71;
+        top: 700px;
+        left: 0;
+        margin: 0 20px;
+        width: auto;
+    }
+    
+    #home .intro h6{
+        color: var(--middleblue);
+        font-size: 22px;
+    }
+    
+    #home .intro h3{
+        font-size: 48px;
+    }
+    
+    #home .intro p{
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 13px;
+        margin-bottom: 26px;
+    }
+    
+    #home .intro a{
+        font-size: 15px;
+    }
+    /*works*/
+
+    
+    #works .label .content{
+        width: 40%;
+        margin: 0 1%;
+    }
+
+    #works .label .content h4{
+        font-size: 18px;
+        top:-10%;
+        left: 5%;
+    }
+    #works .label .CIS h4,
+    #works .label .Fanclub h4{
+        top:-15%;
+    }
+    
+    #works .label .content h5{
+        font-size: 30px;
+        bottom: 23%;
+        left: 0;
+    }
+    #works .label .CIS h5,
+    #works .label .Fanclub h5{
+        font-size: 23px;
+        bottom: 28%;
+    }
+    
+    #works .label .content ul{
+        top: 30%;
+    }
+    
+    #works .label .content ul li{
+        background-color: #3D3D3D95;
+        font-size: 65%;
+        width: 120px;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+        
+    #works .label:hover{
+        transform: scale(0.9);
+    }
+    
+    #works .label .content:hover,
+    #works .label .content.active{
+        transform: scale(1.1);
+    } 
+    
+    #works .label .content ul li:hover,
+    #works .label .content ul .active{
+        letter-spacing: 0.8px;
+        background-color: var(--lightblue);
+        color: white;
+        transform: scale(1.2);
+    }
+    /*about*/
+    #about{
+        padding: 40px;
+    }
+    #about .sec .exp{
+        margin-right: 0px;
+    }
+    #about .sec .comp{
+        margin-left: 0px;
+    }
+    #about p{
+        color: black;
+        font-size: 12px;
+    }
+
+    #about .sec{
+        display: inline-block;
+        padding: 0px 0px 30px 0px;
+    }
+    #about .third{
+        display: inline-block;
+        padding: 0px 20px 30px 20px;
+    }
+
+
+    /*contact*/
+    #contact .SNS .row1{
+        margin: 15px 15px 0 15px;
+    }
+    
+    #contact .SNS a{
+        display: inline-block;
+        width: 230px;
+        margin: 50px 5px 0 5px;
+    }
 }
